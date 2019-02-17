@@ -510,11 +510,11 @@ export class ConfigSet {
       emitDeclarationOnly: undefined,
       sourceRoot: undefined,
     }
-    // force the module kind if not piping babel-jest
-    if (!this.tsJest.babelConfig) {
-      // commonjs is required for jest
-      options.module = this.compilerModule.ModuleKind.CommonJS
-    }
+    // // force the module kind if not piping babel-jest
+    // if (!this.tsJest.babelConfig) {
+    //   // commonjs is required for jest
+    //   options.module = this.compilerModule.ModuleKind.CommonJS
+    // }
     return options
   }
 
